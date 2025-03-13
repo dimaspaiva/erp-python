@@ -1,7 +1,7 @@
 from datetime import datetime
 from flask import Blueprint, request, jsonify
-from ..database import db
-from ..models.paciente import Paciente
+from app.database import db
+from app.models.paciente import Paciente
 
 # Usar prefix é mais prático e evita repetição, logo é uma boa prática
 paciente_bp = Blueprint('paciente', __name__, url_prefix='/paciente')

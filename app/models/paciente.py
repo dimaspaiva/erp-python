@@ -3,7 +3,7 @@ import datetime
 from sqlalchemy import Integer, UUID, String, Date
 from sqlalchemy.orm import Mapped, mapped_column
 from uuid import uuid4
-from ..database import db
+from app.database import db
 
 class Paciente(db.Model):
     id: Mapped[int] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid4)

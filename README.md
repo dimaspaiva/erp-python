@@ -34,3 +34,11 @@ Para adicionar um novo modelo no banco de dados, basta criar um novo arquivo den
 ## Rotas
 
 Para adicionar um nova rota o processo é similar ao dos modelos, cria-se um arquivo da nova rota e adicionar a importação do mesmo dentro do arquivo `__init__.py` da pasta rotas.
+
+## Testando funcionalidades
+
+Para testar funcionalidades recomendo a utilização do [Postman](https://www.postman.com/downloads/).
+
+Na pasta `docs` existe um arquivo com a collection básica com o nome `ERP-Junin.postman_collection`, que pode ser importada para dentro do `Postman` que já inclui as duas rotas criadas.
+
+Recomendo que a cada rota criada a mesma seja adicionada à coleção do `Postman`.

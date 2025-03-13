@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "f590330b-c8ca-442a-b6d1-8d022953d7ef",
+		"name": "ERP-Junin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36845494"
+	},
+	"item": [
+		{
+			"name": "cria paciente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Fulano\",\r\n    \"cpf\": \"12332112333\",\r\n    \"data_nascimento\": \"26/02/2004\",\r\n    \"telefone\": \"35999999999\",\r\n    \"email\": \"test@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/paciente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"paciente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista todos pacientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/paciente",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"paciente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
